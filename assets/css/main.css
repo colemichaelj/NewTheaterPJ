@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* START HEADER */
+h1 {
+    margin: 16px 28px;
+    font-size: 24px;
+}
+
+nav {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    width: 423px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 21px 28px 20px 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+@media (max-width:1250px) {
+    header {
+        display: none;
+    }
+}
+/* END HEADER */
+
+/* START MAIN */
+.hero {
+    height: 720px;
+    max-width: 1440px;
+    margin: 0px auto;
+    background-image: url("../images/AlamoHeader23.jpeg");
+    background-size: cover;
+    color: white;
+}
+
+.hero-text {
+    margin: 0px;
+    font-size: 96px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.schedule {
+    max-width: 1259px;
+    margin: 82px auto 80px auto;
+}
+
+.date {
+    max-width: 1259px;
+    height: 72px;
+    display: flex;
+    justify-content: left;
+    color: #353535;
+    background-color: #D9D9D9;
+    border: 2px solid #A6A6A6;
+    padding: 22px 0px 22px 26px;
+    margin: 82px auto;
+    font-size: 24px;
+}
+
+.show-list {
+    max-width: 1259px;
+    height: 1206px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show {
+    width: 1210px;
+    height: 261px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.show-info {
+    width: 541px;
+    position: relative;
+    right: 44px;
+    bottom: 35px;
+    line-height: 48px;
+}
+
+.show-info h2 {
+    margin: 0px;
+    font-size: 36px;
+}
+
+.show-info p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.read-more {
+    width: 211px;
+    height: 65px;
+    background-color: #F0BB00;
+    border: 1px solid #A07D00;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 78px 0px 118px 0px;
+}
+
+@media (max-width:1200px) {
+    .show {
+        width: 100%;
+        gap: 25px;
+    }
+    .show-info {
+        right: unset;
+        bottom: unset;
+        width: 33%;
+    }
+}
+
+@media (max-width:200px) {
+    .date {
+        justify-content: center;
+    }
+    .show-list {
+        height: 2600px;
+        justify-content: space-between;
+    }
+    .show {
+        flex-direction: column;
+        height: 550px;
+    }
+    .show-info {
+        width: 80%;
+        text-align: center;
+    }
+    a.read-more {
+        margin: 0px;
+    }
+}
+/* END MAIN */
+
+
+/* START FOOTER */
+footer {
+    margin-top: 80px;
+}
+
+.foot-container {
+    max-width: 1440px;
+    height: 475px;
+    padding-left: 116px;
+    padding-top: 78px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.foot-column {
+    width: 244px;
+    height: 238px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot-column h2 {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.foot-column p,
+.foot-column a {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:1200px) {
+    .foot-container {
+        height: 800px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 50px 50px;
+    }
+
+    
+}
+
+@media (max-width:800px) {
+    .foot-container {
+        height: 800px;
+    }
+}
+
+@media (max-width:650px) {
+    .foot-container {
+        height: 1200px;
+        flex-direction: column;
+        flex-wrap: unset;
+        justify-content: space-between;
+    }
+    .foot-column {
+        height: 200px;
+    }
+}
+/* END FOOTER */
